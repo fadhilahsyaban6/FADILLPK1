@@ -35,5 +35,13 @@ st.write(greeting, user_name, punctuation)
 # ...up to here
 # ------------------------------------------------
 
+
+import streamlit as st
+
+with st.sidebar:
+    messages = st.container(height=200)
+    if prompt := st.chat_input("Say something"):
+        messages.chat_message("user").write(prompt)
+        messages.chat_message("assistant").write(f"Echo: {prompt}")
 foo = 'bar'
 st.write('Done!')
