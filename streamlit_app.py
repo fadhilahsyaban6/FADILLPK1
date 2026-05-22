@@ -6,11 +6,11 @@ st.write(
 )
 import streamlit as st
 
-st.button("Reset", type="primary")
-if st.button("ROR"):
-    st.write("NAON")
+st.button("Login", type="primary")
+if st.button("yes"):
+    st.write("yes")
 else:
-    st.write("POKE")
+    st.write("no")
 
-if st.button("CAPA", type="tertiary"):
+if st.button("hahaha", type="tertiary"):
     st.write("HAYUKKK")
